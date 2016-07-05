@@ -51,14 +51,17 @@ console.log('ready')
 
   $('#botL').on('click', function() {
     $('<p>X</p>').appendTo('#botL');
+    $('#botL').addClass("clicked");
   }); //ends botL click function
 
   $('#botM').on('click', function() {
      $('<p>X</p>').appendTo('#botM');
+     $('#botM').addClass("clicked");
   }); //ends botM click function
 
   $('#botR').on('click', function() {
      $('<p>X</p>').appendTo('#botR');
+     $('#botR').addClass("clicked");
   }); //ends botR click function
 
 //---------BOT ROW--------------------//

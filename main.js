@@ -20,7 +20,12 @@ $(document).ready(function() {
   }); //ends topL mousedown function
 
   $('#topL').mouseup(function() {
-    
+    Math.floor((Math.random() * 9) + 1);
+    if ('#topL')
+    //get random num between 1 and 9
+    //check to see if any div already has a class of checked
+    //if it does do the random number again
+    //otherwise place an O and add a class of checked
   });
 
   $('#topM').on('click', function() {

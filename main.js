@@ -8,17 +8,24 @@
 // });
 
 $(document).ready(function() {
-console.log('ready')
 
 //---------TOP ROW---------------------//
   $('#topL').on('click', function() {
-    $('<p>X</p>').appendTo('#topL');
-    $('#topL').addClass("clicked");
+    if ($('#topL').hasClass("clicked")){
+      alert("You have already placed an X there")
+    } else {
+      $('<p>X</p>').appendTo('#topL');
+      $('#topL').addClass("clicked");
+    };
   }); //ends topL click function
 
   $('#topM').on('click', function() {
+    if ($('#topM').hasClass("clicked")){
+      alert("You have already placed an X there")
+    } else {
      $('<p>X</p>').appendTo('#topM');
      $('#topM').addClass("clicked");
+    };
   }); //ends topM click function
 
   $('#topR').on('click', function() {

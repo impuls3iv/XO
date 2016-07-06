@@ -10,14 +10,18 @@
 $(document).ready(function() {
 
 //---------TOP ROW---------------------//
-  $('#topL').on('click', function() {
+  $('#topL').mousedown(function() {
     if ($('#topL').hasClass("clicked")){
       alert("You have already placed an X there")
     } else {
       $('<p>X</p>').appendTo('#topL');
       $('#topL').addClass("clicked");
     };
-  }); //ends topL click function
+  }); //ends topL mousedown function
+
+  $('#topL').mouseup(function() {
+    
+  });
 
   $('#topM').on('click', function() {
     if ($('#topM').hasClass("clicked")){
@@ -87,7 +91,7 @@ $(document).ready(function() {
     } else {
        $('<p>X</p>').appendTo('#botM');
        $('#botM').addClass("clicked");
-      };
+    };
   }); //ends botM click function
 
   $('#botR').on('click', function() {
@@ -96,7 +100,7 @@ $(document).ready(function() {
     } else {
        $('<p>X</p>').appendTo('#botR');
        $('#botR').addClass("clicked");
-     };
+    };
   }); //ends botR click function
 
 //---------BOT ROW--------------------//
